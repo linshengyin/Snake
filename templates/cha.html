@@ -1,0 +1,31 @@
+<html>
+<head>
+   
+    <title>CHART</title>
+</head>
+<body>
+    <center>
+    <h1>排行榜</h1>
+    <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+            <tr>
+                <th>用户</th>
+                <th>设定速度</th>
+                <th>分数</th>
+                <th>时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+                <td>{{ item[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </center>
+</body>
+</html>

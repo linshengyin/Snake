@@ -1,0 +1,22 @@
+
+<html>
+<head>
+   
+    <title>SETTING</title>
+</head>
+<body>
+    <center>
+    <h1>SETTING</h1>
+    Choose your speed:
+    <form action="/set" method="POST">
+        {% for option in options %}
+            <input type="radio" name="option" value="{{option}}">{{option}}<br>
+        {% endfor %}
+        <input type="submit" name="su",value="提交">
+    </form>
+    <form action="/game" method="POST">
+        <input type="submit" name="press" value="返回">
+    </form>
+    </center>
+</body>
+</html>
